@@ -1,0 +1,264 @@
+body{
+  
+  
+}
+p{
+    margin: 0%;
+    padding: 0%;
+}
+span{
+    margin: 0%;
+    padding: 0%;
+}
+/* .corner_img{
+position: absolute;
+top: 0%;
+right: 0%;
+z-index: 10;
+
+
+} */
+.Nav_container{
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 2rem ; */
+    align-items: center;
+    /* z-index: 20; */
+    width: 100%;
+    
+    justify-content: center;
+    
+    
+}
+
+.list_menu_btn{
+    display: none;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 6rem;
+}
+.login_list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+}
+@media (max-width:1050px) {
+   
+   .nav_list{
+    display: none;
+   } 
+   .list_en{
+    display: none;
+   }
+   .list_menu_btn{
+    display: list-item;
+   }
+   .Nav_container{
+    justify-content: space-between;
+    /* justify-self: center; */
+   }
+    
+}
+
+.Hero_contr{
+  display: flex;
+}
+.hero_txt_contr{
+    position: relative;
+    left: 10%;
+    width: 35%;
+    padding-right: 3rem;
+    margin-left: 2rem;
+    margin-top: 6rem;
+}
+.hero_h1{
+    font-size: 4.5rem;
+    color: rgba(24, 30, 75, 1);
+    margin: 0%;
+    line-height: 100px;
+    margin-top: 20px;
+}
+.hero_img{
+   
+}
+
+.catagory_contr{
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: center;
+    justify-items: center;
+    
+}
+.catagory_h1{
+    font-size: 3rem;
+    margin-top: 0%;
+    margin-bottom: 3rem;
+}
+.catagory_card_contr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.catagory_card{
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    border: gray solid 1px;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.catagory_card:hover {
+    color: white;
+    background-color: orangered;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top_selling_contr{
+    align-items: center;
+    justify-items: center;
+}
+.selling_card{
+    
+   border-radius: 10px;
+    border: gray solid 1px;
+   
+    transition: all 0.3s ease-in-out;
+}
+.selling_card:hover {
+    color: white;
+    background-color: orangered;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.selling_card_contr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.selling_card{
+    margin: 2rem;
+}
+.booking_section{
+  padding: 6rem ;
+  justify-items: center;
+  align-items: center;
+}
+.booking_contr{
+    
+   
+    
+
+     display: flex;
+}
+.booking_txt_contr{
+    padding: 1rem 3.5rem;
+    width: 50%;
+    
+}
+.booking_img_contr{
+    width: 50%;
+}
+
+@media (max-width:1050px) {
+    .Hero_contr{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2rem;
+      }
+      
+      .hero_img{
+        width: 100%;
+       
+        /* padding-right: 3rem;
+        margin-left: 2rem; */
+    }
+    .hero_txt_contr{
+        width: 100%;
+        margin-left: 0%;
+         
+        text-align: center;
+        justify-items: center;
+       /* padding-left: 1.5rem;
+       padding-right: 2rem; */
+       padding-right: 0%;
+    left: 0%;
+    }
+    .img_hero_sec{
+        height: auto;
+    }
+    .selling_card_contr{
+        
+        grid-template-columns: 1fr 1fr;
+    }
+    .booking_contr{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking_txt_contr{
+        padding: 0%;
+        width: 100%;
+    }
+    .booking_img_contr{
+        width: 100%;
+        
+    }
+    
+
+
+}
+@media (max-width:768px) {
+
+    .img_hero_sec{
+        height: 30rem;
+        width: 30rem;
+      }
+      .Nav_container{
+        /* justify-content: space-around; */
+       }
+       .catagory_card_contr{
+        
+        grid-template-columns: 1fr 1fr ;
+
+        
+    }
+}
+@media (max-width:450px) {
+    .img_hero_sec{
+        height: 18rem;
+        width: 18rem;
+      }
+      .login_btn,
+      .Sign_btn{
+          display: none;
+      }
+      .hero_h1{
+        font-size: 2.5rem;
+    line-height: 50px;
+
+      }
+      .catagory_card_contr{
+       padding: 0%;
+        grid-template-columns: 1fr;
+
+        
+    }
+    .catagory_h1{
+        font-size: 2rem;
+    }
+    .selling_card_contr{
+        padding: 0% 0%;
+      
+        grid-template-columns: 1fr ;
+    }
+    .booking_section{
+        padding: 1rem 1rem;
+    }
+
+}
+
+    
